@@ -1,1 +1,19 @@
 @use "./../01-abstracts/" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+
+  &__logo {
+    max-width: 87px;
+  }
+
+  &__burguer {
+    max-width: 32px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+  }
+}

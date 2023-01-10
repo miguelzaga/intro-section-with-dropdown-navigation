@@ -1,17 +1,40 @@
+// client-audiophile.svg
+// client-databiz.svg
+// client-maker.svg
+// client-meet.svg
+// favicon-32x32.png
+// icon-arrow-down.svg
+// icon-arrow-up.svg
+// icon-calendar.svg
+// import iconCloseMenu from "./images/icon-close-menu.svg"
+import iconMenu from "./images/icon-menu.svg"
+// icon-planning.svg
+// icon-reminders.svg
+// icon-todo.svg
+// image-hero-desktop.png
+// image-hero-mobile.png
+import logo from "./images/logo.svg"
+
 import { useState } from "react";
 
 function App() {
   return (
     <div>
-      <header>
+      <header className="header">
+        <img className="header__logo" src={logo} alt="logo" />
+        <button className="header__burguer">
+          <img src={iconMenu} alt="open menu" />
+        </button>
+
+        {/*
+        Menu Open
         <nav>
           <ul>
             <li>
               <button>
                 Features
               </button>
-            </li>
-            <li>
+            </li> <li>
               <button>
                 Company
               </button>
@@ -34,7 +57,8 @@ function App() {
         </button>
         <button>
           Register
-        </button>
+        </button> 
+          */}
       </header>
       <main>
         <h1>
