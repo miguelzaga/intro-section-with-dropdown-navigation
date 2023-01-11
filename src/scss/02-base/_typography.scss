@@ -9,18 +9,7 @@ body {
   color: $medium-grey;
 }
 
-@mixin heading-l {
-  font-weight: 700;
-  font-size: rem(80px);
-  line-height: 1;
-  letter-spacing: -1.11111px;
-}
 
-@mixin body-m {
-  font-weight: 500;
-  font-size: rem(18px);
-  line-height: 1.56;
-}
 
 @mixin body-s {
   font-weight: 500;

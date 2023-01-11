@@ -1,0 +1,62 @@
+@use "./../01-abstracts/" as *;
+@use "./../02-base/" as *;
+
+.main {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 96px;
+
+  &__container {
+    margin: 48px 16px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $black;
+    font-size: rem(36px);
+    line-height: 1.17;
+    letter-spacing: rem(-0.5px); 
+    font-weight: 700;
+    margin-bottom: 16px;
+    @include breakpoint($lg){
+      font-size: rem(80px);
+      line-height: 1;
+      letter-spacing: -1.11111px;
+    }
+  }
+
+  &__text {
+    font-size: rem(16px);
+    line-height: 1.62;
+    margin-bottom: 24px;
+    @include breakpoint($lg){
+      font-size: rem(18px);
+      line-height: 1.56;
+    }
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: rem(16px);
+    line-height: 1.62;
+    letter-spacing: rem(-0.222222px);
+    color: $almost-white;
+    background-color: $black;
+    border: solid 1px $black;
+    border-radius: 15px;
+    width: 136px;
+    height: 48px;
+    margin-bottom: 48px;
+    &:hover {
+      background-color: transparent;
+      color: $black;
+    }
+  }
+
+  &__clients {
+    display: flex;
+    justify-content: space-between;
+    gap: 28.5px;
+  }
+}
