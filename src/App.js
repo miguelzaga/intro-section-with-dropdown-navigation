@@ -6,7 +6,6 @@ import clientMeet from "./images/client-meet.svg"
 // icon-arrow-down.svg
 // icon-arrow-up.svg
 // icon-calendar.svg
-// import iconCloseMenu from "./images/icon-close-menu.svg"
 import iconMenu from "./images/icon-menu.svg"
 // icon-planning.svg
 // icon-reminders.svg
@@ -14,6 +13,8 @@ import iconMenu from "./images/icon-menu.svg"
 import imageHeroDesktop from "./images/image-hero-desktop.png"
 import imageHeroMobile from "./images/image-hero-mobile.png"
 import logo from "./images/logo.svg"
+
+import Menu from "./components/menu.js"
 
 import { useState } from "react";
 
@@ -25,48 +26,20 @@ function App() {
     clientMaker,
   ]
 
+  var [open, setOpen] = useState(true);
+
   return (
     <div>
       <header className="header">
         <img className="header__logo" src={logo} alt="logo" />
-        <button className="header__burguer">
+        <button onClick={() => setOpen(true)} className="header__burguer">
           <img src={iconMenu} alt="open menu" />
         </button>
-
-        {/*
-        Menu Open
-        <nav>
-          <ul>
-            <li>
-              <button>
-                Features
-              </button>
-            </li> <li>
-              <button>
-                Company
-              </button>
-            </li>
-            <li>
-              <a>
-                Careers
-              </a>
-            </li>
-            <li>
-              <a>
-                About
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <button>
-          Login
-        </button>
-        <button>
-          Register
-        </button> 
-          */}
       </header>
+      {open ? (
+        <Menu setOpen={setOpen} />
+      ) : ""
+      }
       <main className="main">
         <picture className="main__img">
           <source srcSet={imageHeroDesktop} media="(min-width: 1024px)" />
