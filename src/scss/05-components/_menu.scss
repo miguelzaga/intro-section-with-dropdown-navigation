@@ -7,5 +7,23 @@
   right: 0;
   bottom: 0;
   background-color: #{$black}BF;
+
+  &__container {
+    background-color: $pure-white;
+    height: 100%;
+    margin-left: calc(100% - 240px);
+    padding: 22px 21px 21px 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 32px;
+  }
+
+  &__close {
+    align-self: flex-end;
+    border: none;
+    padding: none;
+    margin: none;
+    background: none;
+  }
 }
 
