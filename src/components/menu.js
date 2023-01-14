@@ -9,14 +9,29 @@ export default ({ setOpen }) => (
       <nav className="menu__nav">
         <ul className="menu__list">
           <li className="menu__li">
-            <button className="menu__accordion">
-              Features
-            </button>
+            <details className="menu__accordion">
+              <summary>
+                Features
+              </summary>
+              <ul>
+                <li>Todo list</li>
+                <li>Calendar</li>
+                <li>Reminders</li>
+                <li>Planning</li>
+              </ul>
+            </details>
           </li>
           <li className="menu__li">
-            <button className="menu__accordion">
-              Company
-            </button>
+            <details className="menu__accordion">
+              <summary>
+                Company
+              </summary>
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </details>
           </li>
           <li className="menu__li">
             <a className="menu__a">
