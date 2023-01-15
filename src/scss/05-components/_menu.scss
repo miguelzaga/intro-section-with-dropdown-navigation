@@ -1,5 +1,12 @@
 @use "./../01-abstracts/" as *;
 
+@mixin no-preset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
 .menu {
   position: absolute;
   top: 0;
@@ -20,10 +27,7 @@
 
   &__close {
     align-self: flex-end;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background: none;
+    @include no-preset;
   }
 
   &__list {
@@ -36,10 +40,7 @@
   }
 
   &__accordion {
-    border: none;
-    padding: 0;
-    margin: 0;
-    background: none;
+    @include no-preset;
     color: $medium-grey;
     position: relative;
     & > summary::marker {
@@ -48,7 +49,31 @@
     & > summary::after {
       content: url('../images/icon-arrow-down.svg');
       margin-left: 17px;
+      vertical-align: middle;
+      position: relative;
+      bottom: 2px;
     }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: rem(14px);
+    line-height: 1.14;
+  }
+
+  &__login {
+    @include no-preset;
+    color: $medium-grey;
+  }
+
+  &__register {
+    @include no-preset;
+    color: $medium-grey;
+    border: 1.5px solid $medium-grey;
+    border-radius: 14px;
+    padding: 13px;
   }
 }
 
