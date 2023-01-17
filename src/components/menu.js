@@ -1,4 +1,8 @@
 import iconCloseMenu from "../images/icon-close-menu.svg"
+import iconCalendar from "../images/icon-calendar.svg"
+import iconPlanning from "../images/icon-planning.svg"
+import iconReminders from "../images/icon-reminders.svg"
+import iconTodo from "../images/icon-todo.svg"
 
 export default ({ setOpen }) => (
   <aside className="menu">
@@ -13,11 +17,11 @@ export default ({ setOpen }) => (
               <summary>
                 Features
               </summary>
-              <ul>
-                <li>Todo list</li>
-                <li>Calendar</li>
-                <li>Reminders</li>
-                <li>Planning</li>
+              <ul className="menu__accordion-ul">
+                <li><a href="#"><img className="menu__accordion-img" src={iconTodo} />Todo list</a></li>
+                <li><a href="#"><img className="menu__accordion-img" src={iconCalendar} />Calendar</a></li>
+                <li><a href="#"><img className="menu__accordion-img" src={iconReminders} />Reminders</a></li>
+                <li><a href="#"><img className="menu__accordion-img" src={iconPlanning} />Planning</a></li>
               </ul>
             </details>
           </li>

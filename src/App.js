@@ -2,14 +2,7 @@ import clientAudiophile from "./images/client-audiophile.svg"
 import clientDatabiz from "./images/client-databiz.svg"
 import clientMaker from "./images/client-maker.svg"
 import clientMeet from "./images/client-meet.svg"
-// favicon-32x32.png
-// icon-arrow-down.svg
-// icon-arrow-up.svg
-// icon-calendar.svg
 import iconMenu from "./images/icon-menu.svg"
-// icon-planning.svg
-// icon-reminders.svg
-// icon-todo.svg
 import imageHeroDesktop from "./images/image-hero-desktop.png"
 import imageHeroMobile from "./images/image-hero-mobile.png"
 import logo from "./images/logo.svg"

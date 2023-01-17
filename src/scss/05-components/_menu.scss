@@ -53,6 +53,23 @@
       position: relative;
       bottom: 2px;
     }
+    &[open] > summary::after {
+      content: url('../images/icon-arrow-up.svg');
+    }
+  }
+
+  &__accordion-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px;
+  }
+
+  &__accordion-img {
+    width: 20px;
+    display: inline-block;
+    margin-right: 14px;
+    vertical-align: middle;
   }
 
   &__buttons {
