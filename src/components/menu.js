@@ -30,10 +30,10 @@ export default ({ setOpen }) => (
               <summary>
                 Company
               </summary>
-              <ul>
-                <li>History</li>
-                <li>Our Team</li>
-                <li>Blog</li>
+              <ul className="menu__accordion-ul">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
               </ul>
             </details>
           </li>
