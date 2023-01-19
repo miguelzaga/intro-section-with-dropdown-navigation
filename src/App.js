@@ -19,7 +19,7 @@ function App() {
     clientMaker,
   ]
 
-  var [open, setOpen] = useState(true);
+  var [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -28,11 +28,8 @@ function App() {
         <button onClick={() => setOpen(true)} className="header__burguer">
           <img src={iconMenu} alt="open menu" />
         </button>
+        <Menu open={open} setOpen={setOpen} />
       </header>
-      {open ? (
-        <Menu setOpen={setOpen} />
-      ) : ""
-      }
       <main className="main">
         <picture className="main__img">
           <source srcSet={imageHeroDesktop} media="(min-width: 1024px)" />

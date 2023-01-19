@@ -4,8 +4,8 @@ import iconPlanning from "../images/icon-planning.svg"
 import iconReminders from "../images/icon-reminders.svg"
 import iconTodo from "../images/icon-todo.svg"
 
-export default ({ setOpen }) => (
-  <aside className="menu">
+export default ({ open, setOpen }) => (
+  <aside className={`menu ${open ? "menu--open" : ""}`}>
     <div className="menu__container">
       <button onClick={() => setOpen(false)} className="menu__close">
         <img src={iconCloseMenu} alt="close menu" />
