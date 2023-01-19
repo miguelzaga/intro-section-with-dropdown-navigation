@@ -14,10 +14,10 @@
   right: 0;
   bottom: 0;
   background-color: #{$black}BF;
-  display: none;
-
+  transition: .15s ease-in;
+  transform: translateY(-100%);
   &--open {
-    display: block;
+    transform: translateX(0)
   }
 
   &__container {
@@ -28,6 +28,11 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 32px;
+    transition: .3s ease-in;
+    transform: translateX(100%);
+    &--open {
+      transform: translateX(0)
+    }
   }
 
   &__close {

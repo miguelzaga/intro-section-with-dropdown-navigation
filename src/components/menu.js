@@ -6,7 +6,7 @@ import iconTodo from "../images/icon-todo.svg"
 
 export default ({ open, setOpen }) => (
   <aside className={`menu ${open ? "menu--open" : ""}`}>
-    <div className="menu__container">
+    <div className={`menu__container ${open ? "menu__container--open" : ""}`}>
       <button onClick={() => setOpen(false)} className="menu__close">
         <img src={iconCloseMenu} alt="close menu" />
       </button>
