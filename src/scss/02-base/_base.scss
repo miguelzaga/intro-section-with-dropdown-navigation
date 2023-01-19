@@ -14,3 +14,10 @@ button, a, summary {
   text-decoration: none;
   color: inherit;
 }
+
+button, a {
+  &:active {
+    position: relative;
+    top: 2px;
+  }
+}

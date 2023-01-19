@@ -5,7 +5,7 @@ import iconReminders from "../images/icon-reminders.svg"
 import iconTodo from "../images/icon-todo.svg"
 
 export default ({ open, setOpen }) => (
-  <aside className={`menu ${open ? "menu--open" : ""}`}>
+  <div className={`menu ${open ? "menu--open" : ""}`}>
     <div className={`menu__container ${open ? "menu__container--open" : ""}`}>
       <button onClick={() => setOpen(false)} className="menu__close">
         <img src={iconCloseMenu} alt="close menu" />
@@ -14,7 +14,7 @@ export default ({ open, setOpen }) => (
         <ul className="menu__list">
           <li className="menu__li">
             <details className="menu__accordion">
-              <summary>
+              <summary className="menu__accordion-sum">
                 Features
               </summary>
               <ul className="menu__accordion-ul">
@@ -27,7 +27,7 @@ export default ({ open, setOpen }) => (
           </li>
           <li className="menu__li">
             <details className="menu__accordion">
-              <summary>
+              <summary className="menu__accordion-sum">
                 Company
               </summary>
               <ul className="menu__accordion-ul">
@@ -59,5 +59,5 @@ export default ({ open, setOpen }) => (
         </button>
       </div>
     </div>
-  </aside>
+  </div>
 )

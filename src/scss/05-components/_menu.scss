@@ -9,6 +9,7 @@
 
 .menu {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -18,6 +19,12 @@
   transform: translateY(-100%);
   &--open {
     transform: translateX(0)
+  }
+
+  @include breakpoint($md-lg){
+    position: static;
+    transform: none;
+    background: none;
   }
 
   &__container {
@@ -33,11 +40,29 @@
     &--open {
       transform: translateX(0)
     }
+    @include breakpoint($md-lg){
+      transform: none;
+      padding: 0;
+      margin: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__close {
     align-self: flex-end;
     @include no-preset;
+    @include breakpoint($md-lg){
+      display: none;
+    }
+  }
+
+  &__nav {
+    @include breakpoint($md-lg){
+      display: flex;
+      align-items: center;
+      font-size: rem(14px);
+    }
   }
 
   &__list {
@@ -47,24 +72,37 @@
     gap: 16px;
     line-height: 1.62;
     color: $medium-grey;
+    @include breakpoint($md-lg){
+      flex-direction: row;
+      gap: 40px;
+    }
   }
 
   &__accordion {
     @include no-preset;
     color: $medium-grey;
     position: relative;
-    & > summary::marker {
+
+    &[open] .menu__accordion-sum{
+      &::after {
+        content: url('../images/icon-arrow-up.svg');
+      }
+    }
+  }
+
+  &__accordion-sum {
+    &::marker {
       content: none;
     }
-    & > summary::after {
+    &::after {
       content: url('../images/icon-arrow-down.svg');
       margin-left: 17px;
       vertical-align: middle;
       position: relative;
       bottom: 2px;
-    }
-    &[open] > summary::after {
-      content: url('../images/icon-arrow-up.svg');
+      @include breakpoint($md-lg){
+        margin-left: 9px;
+      }
     }
   }
 
@@ -88,6 +126,10 @@
     gap: 16px;
     font-size: rem(14px);
     line-height: 1.14;
+    @include breakpoint($md-lg){
+      flex-direction: row;
+      gap: 40px;
+    }
   }
 
   &__login {
@@ -101,6 +143,7 @@
     border: 1.5px solid $medium-grey;
     border-radius: 14px;
     padding: 13px;
+    min-width: 104px;
   }
 }
 

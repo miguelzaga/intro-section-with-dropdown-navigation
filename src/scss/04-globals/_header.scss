@@ -2,7 +2,8 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
   margin: 16px;
 
   &__logo {
@@ -12,8 +13,11 @@
   &__burguer {
     max-width: 32px;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 auto;
     background: none;
     border: none;
+    @include breakpoint($md-lg){
+      display: none;
+    }
   }
 }
