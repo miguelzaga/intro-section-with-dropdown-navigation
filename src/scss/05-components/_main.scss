@@ -8,7 +8,7 @@
   align-items: center;
   padding-bottom: 96px;
   max-width: calc(1145px + 16px);
-  @include breakpoint($lg){
+  @include breakpoint($lg) {
     margin-top: 67px;
     padding: 0 16px 130px;
     flex-direction: row-reverse;
@@ -18,7 +18,7 @@
     margin: 48px 16px;
     text-align: center;
     max-width: 540px;
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       text-align: left;
       margin: 0;
       align-self: flex-end;
@@ -33,15 +33,15 @@
     color: $black;
     font-size: rem(36px);
     line-height: 1.17;
-    letter-spacing: rem(-0.5px); 
+    letter-spacing: rem(-0.5px);
     font-weight: 700;
     margin-bottom: 16px;
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       font-size: rem(80px);
       line-height: 1;
       letter-spacing: -1.11111px;
       padding-right: 10px;
-    margin-bottom: 48px;
+      margin-bottom: 48px;
     }
   }
 
@@ -50,10 +50,10 @@
     line-height: 1.62;
     margin-bottom: 24px;
     max-width: 445px;
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       font-size: rem(18px);
       line-height: 1.56;
-    margin-bottom: 51px;
+      margin-bottom: 51px;
     }
   }
 
@@ -73,7 +73,7 @@
       background-color: transparent;
       color: $black;
     }
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       margin-bottom: 108px;
       width: 163px;
       height: 56px;

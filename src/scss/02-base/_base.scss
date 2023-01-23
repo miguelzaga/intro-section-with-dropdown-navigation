@@ -8,7 +8,9 @@ html {
   position: relative;
 }
 
-button, a, summary {
+button,
+a,
+summary {
   transition: 0.2s ease-in-out;
   cursor: pointer;
   text-decoration: none;
@@ -18,7 +20,8 @@ button, a, summary {
   }
 }
 
-button, a {
+button,
+a {
   &:active {
     position: relative;
     top: 2px;

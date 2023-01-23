@@ -6,7 +6,7 @@
   gap: 60px;
   margin: 16px;
   max-width: 1359px;
-  @include breakpoint($lg){
+  @include breakpoint($lg) {
     margin: 21px auto;
   }
 
@@ -20,7 +20,7 @@
     margin: 0 0 0 auto;
     background: none;
     border: none;
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       display: none;
     }
   }

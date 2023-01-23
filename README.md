@@ -1,23 +1,64 @@
-# Frontend Mentor - Intro section with dropdown navigation
+# Frontend Mentor - Intro section with dropdown navigation solution
 
-## Welcome! 👋
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Thanks for checking out this front-end coding challenge.
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
-## The challenge
+## Overview
 
-Your challenge is to build out this intro section with dropdown navigation and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 
+### Screenshot
+
+![](./screenshot.jpg)
+
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-QhwZNw5xE_](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-QhwZNw5xE_)
+- Live Site URL: [https://intro-section-with-dropdown-navigation-sepia.vercel.app/](https://intro-section-with-dropdown-navigation-sepia.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- Parcel - Build tool
+- Sass - CSS preprocessor
+
+### What I learned
+
+I learned about using the translateY and translateX for the menu openning effect.
+
+```scss
+.menu {
+  transform: translateY(-100%);
+
+  &--open {
+      transform: translateX(0)
+  }
+}
+```
+
+## Author
+
+- Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
 

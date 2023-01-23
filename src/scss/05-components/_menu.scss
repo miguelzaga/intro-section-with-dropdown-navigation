@@ -15,13 +15,13 @@
   right: 0;
   bottom: 0;
   background-color: #{$black}BF;
-  transition: .15s ease-in;
+  transition: 0.15s ease-in;
   transform: translateY(-100%);
   &--open {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
-  @include breakpoint($md-lg){
+  @include breakpoint($md-lg) {
     position: static;
     transform: none;
     background: none;
@@ -35,12 +35,12 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 32px;
-    transition: .3s ease-in;
+    transition: 0.3s ease-in;
     transform: translateX(100%);
     &--open {
-      transform: translateX(0)
+      transform: translateX(0);
     }
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       transform: none;
       padding: 0;
       margin: 0;
@@ -52,13 +52,13 @@
   &__close {
     align-self: flex-end;
     @include no-preset;
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       display: none;
     }
   }
 
   &__nav {
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       display: flex;
       align-items: center;
       font-size: rem(14px);
@@ -72,7 +72,7 @@
     gap: 16px;
     line-height: 1.62;
     color: $medium-grey;
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       flex-direction: row;
       gap: 40px;
     }
@@ -83,9 +83,9 @@
     color: $medium-grey;
     position: relative;
 
-    &[open] .menu__accordion-sum{
+    &[open] .menu__accordion-sum {
       &::after {
-        content: url('../images/icon-arrow-up.svg');
+        content: url("../images/icon-arrow-up.svg");
       }
     }
   }
@@ -95,12 +95,12 @@
       content: none;
     }
     &::after {
-      content: url('../images/icon-arrow-down.svg');
+      content: url("../images/icon-arrow-down.svg");
       margin-left: 17px;
       vertical-align: middle;
       position: relative;
       bottom: 2px;
-      @include breakpoint($md-lg){
+      @include breakpoint($md-lg) {
         margin-left: 9px;
       }
     }
@@ -111,7 +111,7 @@
     flex-direction: column;
     gap: 16px;
     margin: 24px 24px 8px;
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       padding: 24px;
       margin: 20px 0 0;
       position: absolute;
@@ -136,7 +136,7 @@
     gap: 16px;
     font-size: rem(14px);
     line-height: 1.14;
-    @include breakpoint($md-lg){
+    @include breakpoint($md-lg) {
       flex-direction: row;
       gap: 40px;
     }
@@ -158,4 +158,3 @@
     line-height: 1;
   }
 }
-
