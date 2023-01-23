@@ -5,6 +5,10 @@
   align-items: center;
   gap: 60px;
   margin: 16px;
+  max-width: 1359px;
+  @include breakpoint($lg){
+    margin: 21px auto;
+  }
 
   &__logo {
     max-width: 87px;

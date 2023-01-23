@@ -1,14 +1,32 @@
 @use "./../01-abstracts/" as *;
 
 .main {
-  margin-top: 24px;
+  margin: 24px auto auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 96px;
+  max-width: calc(1145px + 16px);
+  @include breakpoint($lg){
+    margin-top: 67px;
+    padding: 0 16px 130px;
+    flex-direction: row-reverse;
+  }
 
   &__container {
     margin: 48px 16px;
     text-align: center;
+    max-width: 540px;
+    @include breakpoint($lg){
+      text-align: left;
+      margin: 0;
+      align-self: flex-end;
+    }
+  }
+
+  &__img {
+    max-width: 480px;
   }
 
   &__title {
@@ -22,6 +40,8 @@
       font-size: rem(80px);
       line-height: 1;
       letter-spacing: -1.11111px;
+      padding-right: 10px;
+    margin-bottom: 48px;
     }
   }
 
@@ -29,9 +49,11 @@
     font-size: rem(16px);
     line-height: 1.62;
     margin-bottom: 24px;
+    max-width: 445px;
     @include breakpoint($lg){
       font-size: rem(18px);
       line-height: 1.56;
+    margin-bottom: 51px;
     }
   }
 
@@ -50,6 +72,11 @@
     &:hover {
       background-color: transparent;
       color: $black;
+    }
+    @include breakpoint($lg){
+      margin-bottom: 108px;
+      width: 163px;
+      height: 56px;
     }
   }
 
