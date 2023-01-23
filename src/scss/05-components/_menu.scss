@@ -111,6 +111,16 @@
     flex-direction: column;
     gap: 16px;
     margin: 24px 24px 8px;
+    @include breakpoint($md-lg){
+      padding: 24px;
+      margin: 20px 0 0;
+      position: absolute;
+      background: $pure-white;
+      box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+      border-radius: 10px;
+      right: -5px;
+      width: max-content;
+    }
   }
 
   &__accordion-img {
@@ -140,7 +150,8 @@
   &__register {
     @include no-preset;
     color: $medium-grey;
-    border: 1.5px solid $medium-grey;
+    border: 1.5px solid;
+    border-color: inherit;
     border-radius: 14px;
     padding: 13px;
     min-width: 104px;

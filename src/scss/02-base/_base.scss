@@ -13,6 +13,9 @@ button, a, summary {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  &:hover {
+    color: $black;
+  }
 }
 
 button, a {
